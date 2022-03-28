@@ -23,10 +23,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 import signup from "./routes/signup.js";
 import login from "./routes/login.js";
+import shortDesc from "./routes/shortDesc.js";
 
 app.post("/signup", signup);
 app.post("/login", login);
-
+app.post("/shortDesc", shortDesc);
 
 
 app.listen(process.env.PORT || port,  ()=> {

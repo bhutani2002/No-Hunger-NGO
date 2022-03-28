@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-import userSchema from "../database/schema.js";
+import schema from "../database/schema.js";
 import validator from "email-validator";
 import bcrypt from "bcrypt";
 
 const saltRounds = 10;
-const User = mongoose.model("User", userSchema);
+const User = mongoose.model("User", schema.userSchema);
 
 export default function signup(req, res){
 

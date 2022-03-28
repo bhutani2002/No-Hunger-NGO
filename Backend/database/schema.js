@@ -10,4 +10,13 @@ const userSchema = new Schema({
     Email: String
 });
 
-export default userSchema;
+const ngoSchema = new Schema({
+Name: String,
+City: String,
+Country: String,
+Image: String,
+Description: String,
+Link: String
+});
+
+export default {userSchema, ngoSchema};
