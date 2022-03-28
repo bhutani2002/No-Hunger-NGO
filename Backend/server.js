@@ -24,11 +24,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 import signup from "./routes/signup.js";
 import login from "./routes/login.js";
 import shortDesc from "./routes/shortDesc.js";
+import completeDesc from "./routes/completeDesc.js";
 
 app.post("/signup", signup);
 app.post("/login", login);
 app.post("/shortDesc", shortDesc);
-
+app.post("/completeDesc", completeDesc);
 
 app.listen(process.env.PORT || port,  ()=> {
     console.log(`>> Server started successfully at port ` + process.env.PORT || port);

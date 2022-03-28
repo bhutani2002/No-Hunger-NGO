@@ -16,7 +16,11 @@ City: String,
 Country: String,
 Image: String,
 Description: String,
-Link: String
+Link: String,
+Address: String,
+Phone: String,
+Works: String,
+Awards: String
 });
 
 export default {userSchema, ngoSchema};

@@ -15,11 +15,15 @@ export default function shortDesc(req, res){
         else{
         var requiredData = [];
         for(var i =0;i<foundData.length; i++){
+            var reqName = foundData[i].Name;
             var reqDesc = foundData[i].Description;
             var reqImage = foundData[i].Image;
+            var reqLink = foundData[i].Link;
             var customData = {
+                Name: reqName,
                 Image: reqImage,
-                Description: reqDesc
+                Description: reqDesc,
+                Link: reqLink
             };
             requiredData.push(customData);
         }
