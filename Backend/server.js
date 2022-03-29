@@ -26,12 +26,14 @@ import login from "./routes/login.js";
 import shortDesc from "./routes/shortDesc.js";
 import completeDesc from "./routes/completeDesc.js";
 import ngoForm from "./routes/ngoForm.js";
+import fetchCityCountry from "./routes/cityCountry.js";
 
 app.post("/signup", signup);
 app.post("/login", login);
 app.post("/shortDesc", shortDesc);
 app.post("/completeDesc", completeDesc);
 app.post("/ngoForm", ngoForm);
+app.post("/fetchCityCountry", fetchCityCountry);
 
 app.listen(process.env.PORT || port,  ()=> {
     console.log(`>> Server started successfully at port ` + process.env.PORT || port);

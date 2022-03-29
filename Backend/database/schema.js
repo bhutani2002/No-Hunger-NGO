@@ -23,4 +23,9 @@ Works: String,
 Awards: String
 });
 
-export default {userSchema, ngoSchema};
+const citySchema = new Schema({
+    City: String,
+    Country: String
+});
+
+export default {userSchema, ngoSchema, citySchema};
