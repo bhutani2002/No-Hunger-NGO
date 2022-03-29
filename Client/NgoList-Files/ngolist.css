@@ -1,0 +1,65 @@
+:root {
+    --shadow-color: rgba(0,0,0,0.2);
+  }
+.mainbox{
+    display: grid;
+    /* grid-template-columns: repeat(5, minmax(80px, 0.2fr)); */
+    /* grid-gap:10px;
+    /* grid-template-columns: auto auto auto; */
+    /* grid-gap: 120px; */
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px var(--shadow-color), 0 0 20px var(--shadow-color);
+}
+.ngo-image{
+    object-fit: contain;
+    width:300px;
+    height:100%;
+    border-radius:10px 10px 0 0 ;
+}
+.ngo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.description{
+    margin: 10px 10px;
+    font-size: 18px;
+}
+.donate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 30px 0;
+    text-decoration-style: none;
+}
+.form-button{
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 0 15px;
+    box-shadow: 0 8px 8px lightgray;
+    position: relative;
+    top:-4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: oblique;
+    background-color: white;
+    border: 0;
+}
+.form-button:active{
+    top:0px;
+    box-shadow: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
