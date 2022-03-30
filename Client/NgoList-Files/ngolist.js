@@ -96,6 +96,10 @@ for (let i = 0; i < list.length; i++) {
     formlink.href = list[i].formUrl;
     Link.innerText = "Donate";
     Donate.appendChild(button);
+    button.addEventListener('click', () => {
+        window.location.pathname = 'Client/NgoLongDesc/NgoLongDesc.html';
+        // location.assign("http://127.0.0.1:5500/Client/NgoLongDesc/NgoLongDesc.html")
+    });
 
     //Onclick pass name, city, country
     //Create function of name city country  (Array)
