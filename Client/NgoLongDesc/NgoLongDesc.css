@@ -1,3 +1,88 @@
-body{
-    background-color: red;
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-middle {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-left{
+    word-wrap: break-word;
+    margin: 40px;
+    position: fixed;
+    left: 0;
+    top:40px;
+}
+
+.container-right{
+    word-wrap: break-word;
+    margin: 40px;
+    position: fixed;
+    right: 0;
+    top:40px;
+}
+
+.Desc{
+    margin:40px 0 20px 0;
+    font-size: 20px;
+}
+.Ngo-image{
+    border-radius: 10px;
+    width: 500px;
+    height: 333px;
+    object-fit: contain;
+}
+.Ngo-name{
+    margin: 40px 0 -20px 0;
+}
+.award,.contact_icon,.envelope,.map-marker{
+    font-size: 40px;
+    margin: 10px 15px 0 0;
+}
+.works{
+    font-size:30px;
+    margin: 10px 15px 0 0;
+}
+.works{
+    color:black;
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 0 20px 0;
+}
+.icons-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email_subtitle,.address_subtitle{
+    cursor: pointer;
+}
+.email_subtitle:hover,.address_subtitle:hover{
+    color:gray;
+}
+.form-button{
+    font-size:25px;
+    border-radius: 10px;
+    width: 150px;
+    font-weight: bold;
+    background-color: white;
+    position: relative;
+    top:-7px;
+}
+.form-button:active{
+    top:0px;
 }
