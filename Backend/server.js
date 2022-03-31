@@ -7,11 +7,11 @@ dotenv.config();
 
 const username = process.env.DBUsername;
 const password = process.env.DBPassword;
-const url ="mongodb+srv://ngoproject:ngoproject30032022@cluster01.o47ui.mongodb.net/ngoDB?retryWrites=true&w=majority";
+const url = "mongodb+srv://ngoproject:ngoproject30032022@cluster01.o47ui.mongodb.net/ngoDB?retryWrites=true&w=majority";
 
 mongoose.connect(url,
     { useNewUrlParser: true, useUnifiedTopology: true }, err => {
-        if(err) console.log(err);
+        if (err) console.log(err);
         else console.log('Database connected')
     });
 
@@ -28,7 +28,9 @@ app.post("/signup", signup);
 app.post("/login", login);
 
 
-
-app.listen(process.env.PORT || port,  ()=> {
+// app.get('/NgoLongDesc', (req, res) => {
+//     res.sendFile(__dirname + '/NgoLongDesc/NgoLongDesc.html');
+// })
+app.listen(process.env.PORT || port, () => {
     console.log(`>> Server started successfully at port ` + process.env.PORT || port);
-  });
+});
