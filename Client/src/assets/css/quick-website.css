@@ -1,18 +1,4 @@
 @charset 'UTF-8';
-/*
-
-Theme: Quick – Website UI Kit (FREE)
-Version: 1.1.0
-Product Page: https://webpixels.io/themes/quick-website-ui-kit
-License: MIT
-Author: Webpixels
-Author URI: https://webpixels.io
-
----
-
-Copyright 2020 Webpixels
-
-*/
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600,700,800&display=swap);
 
 :root {
@@ -25701,7 +25687,7 @@ section {
     position: relative;
 
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    /* padding-bottom: 4rem; */
 }
 
 .slice-xl {
@@ -25710,7 +25696,7 @@ section {
 }
 
 .slice-lg {
-    padding-top: 6rem;
+    padding-top: 2rem;
     padding-bottom: 6rem;
 }
 
@@ -25930,4 +25916,21 @@ screen and (-ms-high-contrast: none) {
 
 .ngo-select {
     margin-left: 15px;
+}
+
+.contact-content {
+    color: black;
+}
+
+.about-content {
+    color: black;
+    padding-top: 4rem;
+}
+
+.contact-padding {
+    padding-top: 4rem;
+}
+
+.collapse-items {
+    align-items: center;
 }
